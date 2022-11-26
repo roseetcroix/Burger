@@ -150,10 +150,9 @@ header{
     background-image: url(../img/Banner.jpg);
     max-width: 1180px;
     height: 440px;
-    margin-left: 190px;
+    margin-left: -68px;
     margin-right: 368px;
     margin-top: 134px;
-
 }
 .container-banner{
     width: 353px;  
@@ -202,8 +201,7 @@ header{
     /*border: 1px solid 0;*/
     width: 310px;
     height: 38px;
-}
-    
+}    
   .banner-link{
     position: absolute;  
     bottom: 1px;
