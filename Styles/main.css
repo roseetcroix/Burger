@@ -92,6 +92,7 @@ header{
     background-position: center center;
     padding: 142px 0;
     
+    
 }
 .breadcrumbs {
     padding-left: 0;
@@ -143,6 +144,7 @@ header{
 .main{
     width: 1920px;
     max-height: 2885px;
+    
 }
 .banner{    
     color: #FFFFFF;    
@@ -150,7 +152,7 @@ header{
     background-image: url(../img/Banner.jpg);
     max-width: 1180px;
     height: 440px;
-    margin-left: -68px;
+    margin-left: 368px;
     margin-right: 368px;
     margin-top: 134px;
 }
@@ -204,7 +206,7 @@ header{
 }    
   .banner-link{
     position: absolute;  
-    bottom: 1px;
+    bottom: 0;
     /*border: 1px solid #FBB731;*/
     background-color: #FBB731;
     border-radius: 5px;
