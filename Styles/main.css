@@ -199,10 +199,10 @@ header{
     font-size: 15px;
     line-height: 24px ;
     position: absolute;   
-    top: 105px;
+    top: 100px;
     /*border: 1px solid 0;*/
-    width: 353px;
-    height: 48px;
+    min-width: 256px;
+    min-height: 48px;
 }    
   .banner-link{
     position: absolute;  
