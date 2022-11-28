@@ -186,3 +186,26 @@ header{
     color: #1E2F40;
     border-radius: 5px;    
 }
+/* module13*/
+.menu-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-title{
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:  #1B2A49;
+    
+}
+.menu-select{
+    border: 1px solid #DEDEDE;
+    padding: 10px 30px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none;
+    flex-basis: 279px;
+}
+
