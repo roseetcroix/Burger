@@ -38,7 +38,7 @@
             <div class="promo-right">
                 <p class="free">Бесплатно</p>
                 <p class="promo-description">При заказе на сумму 500 рублей и более - доставляем бесплатно</p>
-                <a href="menu.html">заказать</a>
+                <a href="menu.html" class="promo-right-btn-order">заказать</a>
             </div>
         </div>
     </div>
@@ -81,7 +81,54 @@
                 </div>
             </div>            
         </div>
-    </footer>  
+    </footer> 
+    <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <script>
+        //Smooth Scroll
+
+         const links = document.querySelectorAll(".banner-link");
+
+            for (const link of links) 
+            {
+            link.addEventListener("click", clickHandler);
+            }
+
+            function clickHandler(e)
+            {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+                            });
+            }
+
+         //ButtonUp
+         window.onscroll = function(){scrollFunction()};
+
+            const upbuttons = document.querySelectorAll(".button-up");
+
+            for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+                                          }
+
+            function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+                                                   });
+            }
+
+            function scrollFunction(){
+            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+            document.getElementById('btnUp').className = 'button-up visible';
+            } else {
+            document.getElementById('btnUp').className = 'button-up hidden';
+            }
+            }
+    </script> 
 </body>
 </html>
 Footer
