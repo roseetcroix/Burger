@@ -146,15 +146,12 @@ header{
     max-width: 320px;
     margin: 0 auto;    
 }
-
-/*Lesson 12*/
-
 .banner-box{    
     color: #FFFFFF;    
     background-repeat: no-repeat ; 
     background-image: url(../img/Banner.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: 0 center;
     padding: 100px 100px 120px; 
     margin-bottom: 80px;   
 }
@@ -202,8 +199,6 @@ header{
     background-color: transparent;
     color: #FBB731;    
 }
-
-/* Lesson13*/
 .menu{
     padding-top: 20px;
 }
@@ -236,20 +231,19 @@ header{
 .menu-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px 20px;
-    text-align: center;
-        
+    gap: 50px 15px;
+    text-align: center;        
 }
 .menu-grid-item{
     margin-top: 15px;    
     margin-bottom: 35px;
 }
-
 .menu-grid-cover{
     width: 100%;
-    height: 430px;
+    height: 50vw;
     position: relative;
-    overflow: hidden;      
+    overflow: hidden;  
+    margin-bottom: 23px;    
 }
 .menu-grid-cover img {
     position: absolute;
@@ -314,13 +308,12 @@ header{
     font-weight: 700;    
     text-transform: uppercase;
     margin: 0 20px 20px 0;
-    text-align: center;   
+    text-align: center;  
 }
-
-.additional{
+.additional {
     margin-top: 70px;
     margin-bottom: 140px;
-}
+}    
 .additional-title{
     font-size: 44px;
     font-weight: 700;
@@ -331,10 +324,10 @@ header{
 .grid-additional{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 35px;
-}  
-    
+    gap: 15px;
+    margin-top: 50px;
+} 
+     
 .additional-grid-cover{
     width: 100%;
     height: 430px;
@@ -408,7 +401,6 @@ header{
     margin: 0 20px 20px 0;
     text-align: center;  
 }
-/* Lesson14*/
 .footer {
     background: #1E2F40;
     color: #fff;
@@ -432,12 +424,8 @@ header{
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 19px;
-    margin-top: 0;
-}
-.footer-item ul,
-.footer-tel ul {
-   
-}
+    margin-top: 0;   
+}  
 .footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
@@ -493,7 +481,7 @@ header{
     padding: 5px 20px ;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 39px;
     border-radius: 5px;
     transition: 0.5s;
     text-align: center;
@@ -642,3 +630,201 @@ header{
     margin-bottom: 10px;
     margin-top: 0;
 }
+/*Modal*/
+.burger{
+    width: 34px;
+    height: 22px;
+    background-image: url(../img/burger.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.modal{
+    background-color: #FFF8DC;
+    max-width: 500px;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.modal .header-nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+}
+.burger-close{
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/close.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/*Responsiv*/
+@media (min-width: 1001px){
+    .footer-list + .footer-list-tel{
+        display: none;
+    }
+}
+@media (min-width: 766px){
+    .header-burger {
+        display: none;
+    }       
+}
+@media (max-width: 1000px){
+    .container{
+        max-width: 738px;
+    }
+    .header-logo{
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav{
+        gap: 22px;
+    }
+    .header-item {       
+        flex-basis: 75.5%;
+    }
+    .banner-box {        
+        background-position: -70px center;
+        padding: 100px 40px 120px;       
+    }
+    .bg {
+       margin-bottom: 72px;          
+    }
+    .menu-grid {       
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 50px 15px;              
+    }
+    .menu-grid-cover img {       
+        height: 430px;
+    }
+    .footer-tel{
+        display: none;
+    }
+    .footer-list + .footer-list-tel{
+        display: block;
+    }
+    .menu-other{
+        overflow: hidden ;
+        height: 572px;        
+    }
+    .menu-other .grid-additional{
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+    .menu-other .additional-grid-cover ,
+    .menu-other .additional-grid-cover img {
+        height: 326px;
+    }
+    .menu-other .additional-grid-item {
+        flex: 0 0 281px;
+    }    
+}
+@media (max-width: 765px){
+    nav{
+        display: none;
+    }
+    .header{
+        gap: 15px;
+    }  
+  }
+@media (max-width: 567px){
+    .header {        
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+      .header-logo{
+        width: 116px;
+        height: 37px;       
+      }
+      .title{       
+        font-size: 38px;        
+      }
+      .breadcrumbs a{
+        font-size: 15px;
+      }
+      .bg {
+        margin-bottom: 33px;          
+     }
+      .description {
+        font-size: 12px;
+      }
+      .bg {
+        padding: 55px 0;
+      }
+      .banner-box {        
+        background-position: 17% center;
+        padding: 35px 24px 54px;        
+      } 
+      .menu-title {
+        font-size: 27px;        
+    }   
+    .menu-select {       
+        font-size: 12px; 
+        flex-basis: 136px; 
+        padding: 13px 24px 13px 15px;  
+        background-position: 91% center;   
+    }  
+    .menu-header{
+        margin-bottom: 38px;
+    } 
+    }    
+@media (max-width: 360px){
+    .header-logo{
+        width: 116px;
+        height: 47px;
+        background-size: contain;
+      } 
+}
+@media (max-width: 320px){
+   .banner-box{
+        background-position: 25% center;   
+      }        
+}
+
+@media (min-width: 320px){
+    .footer {        
+        padding-top: 9%;    
+   }    
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
